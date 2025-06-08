@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ClimaCast brings accurate weather forecasts and safety information directly from our site.">
+    <meta http-equiv="Cache-Control" content="no-store">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <title>Error - Page Not Found</title>
+</head>
+<style>
+body {
+    background-color: #eff2fe;
+    font-family: 'Funnel Display', sans-serif;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full height */
+    justify-content: center; /* Center vertically */
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    position: relative;
+    padding: 10px;
+}
+
+.nav-bar-btn {
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    margin: 10px 5px;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out;
+    border-radius: 15px;
+}
+
+#logo {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+.error-content {
+    padding: 20px;
+    background-color: #dfe6f5;
+    border-radius: 20px;
+    margin: 20px;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.error-content h1 {
+    font-size: 48px;
+    color: #01233d;
+    margin: 10px 0;
+}
+
+.error-content p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.error-content a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #01233d;
+    color: white;
+    text-decoration: none;
+    border-radius: 13px;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.error-content a:hover {
+    background-color: #034c8c;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .nav-bar-btn {
+        font-size: 14px;
+    }
+
+    .error-content h1 {
+        font-size: 36px; /* Adjust title size */
+    }
+
+    .error-content p {
+        font-size: 16px; /* Adjust paragraph size */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nav-bar-btn {
+        font-size: 12px;
+        padding: 8px;
+        border-radius: 10px;
+    }
+
+    .error-content h1 {
+        font-size: 28px; /* Further adjust title size */
+    }
+
+    .error-content p {
+        font-size: 14px; /* Further adjust paragraph size */
+    }
+}
+</style>
+<body>
+    
+    <div class="error-content">
+        <h1>503 - Server's on a teabreak.</h1>
+        <p>He'll be back soon. Try refreshing the page.</p>
+        <p>Don't worry; you can go back to our homepage or check out our planned outages!</p>
+        <p><strong>Error code: ERR_SERVICE_UNAVAILABLE (503)</strong></p>
+        <a href="https://climacast.uk/">Return Home</a>
+        <a href="https://dev.climacast.uk/outages/">Outages</a>
+    </div>
+</body>
+</html>

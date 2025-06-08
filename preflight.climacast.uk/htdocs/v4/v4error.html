@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <title>ClimaCast 4 - Coming Soon</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Funnel Display', sans-serif;
+      background: #0e0e2c;
+      color: white;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      animation: slideIn 1s ease-out forwards;
+      opacity: 0;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      color: #aaa;
+      animation: fadeIn 2s ease forwards;
+      opacity: 0;
+    }
+
+    .cta {
+      background: #00aaff;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      font-weight: bold;
+      display: inline-block;
+      text-decoration: none;
+      margin-top: 2rem;
+      transition: transform 0.2s ease;
+    }
+
+    .cta:hover {
+      transform: scale(1.05);
+    }
+
+    @keyframes slideIn {
+      from { transform: translateY(40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <h1>ClimaCast 4 isn't here yet.</h1>
+  <p>We’re still working hard to bring you ClimaCast 4! The beta testing phase is not open yet.</p>
+  <p>Stay tuned for updates on the channel — we’ll notify you when the beta is live!</p>
+</body>
+</html>

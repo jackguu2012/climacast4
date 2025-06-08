@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ClimaCast Article on Flooding Safety" />
+  <title>Flooding Safety – ClimaCast</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fff;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    .header {
+      position: relative;
+      width: 100%;
+      height: 450px;
+      overflow: hidden;
+      z-index: 0;
+    }
+
+    .header img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .back-btn {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      padding: 12px 25px;
+      background-color: rgba(3, 76, 140, 0.8);
+      color: white;
+      text-decoration: none;
+      border-radius: 15px;
+      font-weight: bold;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+      z-index: 10;
+    }
+
+    .back-btn:hover {
+      background-color: rgba(1, 35, 61, 0.8);
+    }
+
+    .article-container {
+      border-radius: 20px;
+      max-width: 900px;
+      width: 90%;
+      margin-top: -200px;
+      padding: 40px 30px;
+      text-align: left;
+      background-color: #fff;
+      z-index: 1;
+      position: relative;
+    }
+
+    .article-content {
+      font-size: 17px;
+      line-height: 1.85;
+      color: #222;
+    }
+
+    .article-content h1 {
+      font-size: 48px;
+      color: #01233d;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .article-content h2 {
+      color: #034c8c;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      font-size: 28px;
+    }
+
+    .article-content p {
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+    .article-content ul {
+      margin-bottom: 24px;
+      padding-left: 20px;
+    }
+
+    .article-content ul li {
+      margin-bottom: 12px;
+    }
+
+    .cta-btn {
+      display: block;
+      width: 100%;
+      padding: 15px;
+      text-align: center;
+      background-color: #034c8c;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 10px;
+      margin-top: 40px;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-btn:hover {
+      background-color: #01233d;
+    }
+
+    hr {
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: 768px) {
+      .article-content {
+        font-size: 17px;
+      }
+
+      .article-content h1 {
+        font-size: 36px;
+      }
+
+      .cta-btn {
+        font-size: 18px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .back-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+      }
+
+      .cta-btn {
+        font-size: 16px;
+        padding: 12px;
+      }
+
+      .article-content h1 {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <a class="back-btn" onclick="window.history.back()">← Back</a>
+    <img src="floodimg.jpeg" alt="Flooding Image">
+  </div>
+
+  <div class="article-container">
+    <div class="article-content">
+      <h1>Flooding Safety Advice</h1>
+      <p>Author: ClimaCast, Updated: 23/05/2025</p>
+      <hr>
+
+      <p>Flooding is one of the most serious weather risks in the UK, and it can happen very quickly. Stay alert when flood warnings are issued and follow this advice to keep yourself safe.</p>
+
+      <p>ClimaCast issues flood alerts based on official information from the Environment Agency and flood forecasting services. Our warnings aim to help you act early to reduce risk and damage.</p>
+
+      <h2>Before a Flood</h2>
+      <ul>
+        <li>Check if your area is at risk on <a href="https://check-for-flooding.service.gov.uk/">gov.uk/flood</a>.</li>
+        <li>Sign up for free flood warnings and keep an emergency kit ready.</li>
+        <li>Move vehicles, valuables, and electricals to higher ground or upper floors.</li>
+        <li>Have sandbags or flood boards ready if your home is prone to flooding.</li>
+      </ul>
+
+      <h2>During a Flood</h2>
+      <ul>
+        <li>Avoid walking, swimming, or driving through flood water. Just 30cm can move a car.</li>
+        <li>Turn off gas, electricity, and water if advised to do so — only if safe.</li>
+        <li>Take pets and important items upstairs with you.</li>
+        <li>Listen to emergency services for evacuation instructions.</li>
+        <li>Do not go outside to take photos — stay inside and stay safe.</li>
+      </ul>
+
+      <h2>After a Flood</h2>
+      <ul>
+        <li>Only return home when authorities say it is safe.</li>
+        <li>Wear waterproof gloves and boots when cleaning — flood water can contain sewage.</li>
+        <li>Boil tap water if instructed by your local water supplier.</li>
+        <li>Document damage with photos and contact your insurance provider.</li>
+      </ul>
+
+      <p><strong>Preparedness can protect lives. Always follow the instructions given on flood alerts.</strong></p>
+    </div>
+  </div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ClimaCast Article on Flooding Safety" />
+  <title>Flooding Safety – ClimaCast</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fff;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    .header {
+      position: relative;
+      width: 100%;
+      height: 450px;
+      overflow: hidden;
+      z-index: 0;
+    }
+
+    .header img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .back-btn {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      padding: 12px 25px;
+      background-color: rgba(3, 76, 140, 0.8);
+      color: white;
+      text-decoration: none;
+      border-radius: 15px;
+      font-weight: bold;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+      z-index: 10;
+    }
+
+    .back-btn:hover {
+      background-color: rgba(1, 35, 61, 0.8);
+    }
+
+    .article-container {
+      border-radius: 20px;
+      max-width: 900px;
+      width: 90%;
+      margin-top: -200px;
+      padding: 40px 30px;
+      text-align: left;
+      background-color: #fff;
+      z-index: 1;
+      position: relative;
+    }
+
+    .article-content {
+      font-size: 17px;
+      line-height: 1.85;
+      color: #222;
+    }
+
+    .article-content h1 {
+      font-size: 48px;
+      color: #01233d;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .article-content h2 {
+      color: #034c8c;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      font-size: 28px;
+    }
+
+    .article-content p {
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+    .article-content ul {
+      margin-bottom: 24px;
+      padding-left: 20px;
+    }
+
+    .article-content ul li {
+      margin-bottom: 12px;
+    }
+
+    .cta-btn {
+      display: block;
+      width: 100%;
+      padding: 15px;
+      text-align: center;
+      background-color: #034c8c;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 10px;
+      margin-top: 40px;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-btn:hover {
+      background-color: #01233d;
+    }
+
+    hr {
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: 768px) {
+      .article-content {
+        font-size: 17px;
+      }
+
+      .article-content h1 {
+        font-size: 36px;
+      }
+
+      .cta-btn {
+        font-size: 18px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .back-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+      }
+
+      .cta-btn {
+        font-size: 16px;
+        padding: 12px;
+      }
+
+      .article-content h1 {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <a class="back-btn" onclick="window.history.back()">← Back</a>
+    <img src="floodimg.jpeg" alt="Flooding Image">
+  </div>
+
+  <div class="article-container">
+    <div class="article-content">
+      <h1>Flooding Safety Advice</h1>
+      <p>Author: ClimaCast, Updated: 23/05/2025</p>
+      <hr>
+
+      <p>Flooding is one of the most serious weather risks in the UK, and it can happen very quickly. Stay alert when flood warnings are issued and follow this advice to keep yourself safe.</p>
+
+      <p>ClimaCast issues flood alerts based on official information from the Environment Agency and flood forecasting services. Our warnings aim to help you act early to reduce risk and damage.</p>
+
+      <h2>Before a Flood</h2>
+      <ul>
+        <li>Check if your area is at risk on <a href="https://check-for-flooding.service.gov.uk/">gov.uk/flood</a>.</li>
+        <li>Sign up for free flood warnings and keep an emergency kit ready.</li>
+        <li>Move vehicles, valuables, and electricals to higher ground or upper floors.</li>
+        <li>Have sandbags or flood boards ready if your home is prone to flooding.</li>
+      </ul>
+
+      <h2>During a Flood</h2>
+      <ul>
+        <li>Avoid walking, swimming, or driving through flood water. Just 30cm can move a car.</li>
+        <li>Turn off gas, electricity, and water if advised to do so — only if safe.</li>
+        <li>Take pets and important items upstairs with you.</li>
+        <li>Listen to emergency services for evacuation instructions.</li>
+        <li>Do not go outside to take photos — stay inside and stay safe.</li>
+      </ul>
+
+      <h2>After a Flood</h2>
+      <ul>
+        <li>Only return home when authorities say it is safe.</li>
+        <li>Wear waterproof gloves and boots when cleaning — flood water can contain sewage.</li>
+        <li>Boil tap water if instructed by your local water supplier.</li>
+        <li>Document damage with photos and contact your insurance provider.</li>
+      </ul>
+
+      <p><strong>Preparedness can protect lives. Always follow the instructions given on flood alerts.</strong></p>
+    </div>
+  </div>
+
+</body>
+</html>

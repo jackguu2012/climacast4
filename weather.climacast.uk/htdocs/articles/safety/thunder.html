@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ClimaCast Article on Thunderstorm Safety and Preparedness" />
+  <title>Thunderstorm Safety – ClimaCast</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Funnel Display', sans-serif;
+      background-color: #fff;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    .header {
+      position: relative;
+      width: 100%;
+      height: 450px;
+      overflow: hidden;
+      z-index: 0;
+    }
+
+    .header img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .back-btn {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      padding: 12px 25px;
+      background-color: rgba(3, 76, 140, 0.8);
+      color: white;
+      text-decoration: none;
+      border-radius: 15px;
+      font-weight: bold;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+      z-index: 10;
+      cursor: pointer;
+    }
+
+    .back-btn:hover {
+      background-color: rgba(1, 35, 61, 0.8);
+    }
+
+    .article-container {
+      border-radius: 20px;
+      max-width: 900px;
+      width: 90%;
+      margin-top: -200px;
+      padding: 40px 30px;
+      text-align: left;
+      background-color: #fff;
+      z-index: 1;
+      position: relative;
+    }
+
+    .article-content {
+      font-size: 17px;
+      line-height: 1.85;
+      color: #222;
+    }
+
+    .article-content h1 {
+      font-size: 48px;
+      color: #01233d;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .article-content h2 {
+      color: #034c8c;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      font-size: 28px;
+    }
+
+    .article-content p {
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+    .article-content ul {
+      margin-bottom: 24px;
+      padding-left: 20px;
+    }
+
+    .article-content ul li {
+      margin-bottom: 12px;
+    }
+
+    hr {
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: 768px) {
+      .article-content {
+        font-size: 17px;
+      }
+
+      .article-content h1 {
+        font-size: 36px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .back-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+      }
+
+      .article-content h1 {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <a class="back-btn" onclick="window.history.back()">← Back</a>
+    <img src="thunderimg.jpg" alt="Thunderstorm Image" />
+  </div>
+
+  <div class="article-container">
+    <div class="article-content">
+      <h1>Thunderstorm Advice</h1>
+      <p>Author: ClimaCast, Updated: 19/05/2025</p>
+      <hr>
+
+      <h2>Risk of Flooding</h2>
+      <p>Thunderstorms bring widespread precipitation, disruption, and potentially flooding. It is vital to keep your property and loved ones safe.</p>
+      <p>Our rain/thunderstorm warnings will tell you if your area is at risk of flooding. If this affects you, follow these steps:</p>
+      <ul>
+        <li>Read the full Alert. It will give you vital safety information.</li>
+        <li>Prepare a flood plan. Our flooding article gives you a pre-built one.</li>
+        <li>Follow local authorities’ instructions such as sandbag collection, road closures, and emergency updates.</li>
+      </ul>
+      <p>ClimaCast Alerts are designed to give you local information, but they do not replace official government or council instructions.</p>
+
+      <h2>Lightning Safety Tips</h2>
+      <p>Thunderstorms often include lightning, which can be extremely dangerous. Here are some ways to stay safe:</p>
+      <ul>
+        <li>Stay indoors and avoid using plugged-in electronics.</li>
+        <li>Keep away from windows and metal objects.</li>
+        <li>Do not shelter under trees or near tall objects outdoors.</li>
+        <li>If you are outside with no shelter, crouch low with minimal contact to the ground.</li>
+      </ul>
+
+      <h2>Travel and Driving Tips</h2>
+      <p>If you must travel during a storm, use extreme caution:</p>
+      <ul>
+        <li>Turn on headlights and reduce speed.</li>
+        <li>Keep a safe distance between you and the vehicle in front.</li>
+        <li>Never drive through floodwaters. Even shallow water can stall your car or sweep it away.</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>

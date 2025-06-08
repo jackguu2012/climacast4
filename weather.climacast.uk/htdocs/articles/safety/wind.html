@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ClimaCast Article on Strong Wind Safety" />
+  <title>Strong Wind Safety – ClimaCast</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Funnel Display', sans-serif;
+      background-color: #fff;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    .header {
+      position: relative;
+      width: 100%;
+      height: 450px;
+      overflow: hidden;
+      z-index: 0;
+    }
+
+    .header img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .back-btn {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      padding: 12px 25px;
+      background-color: rgba(3, 76, 140, 0.8);
+      color: white;
+      text-decoration: none;
+      border-radius: 15px;
+      font-weight: bold;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+      z-index: 10;
+      cursor: pointer;
+    }
+
+    .back-btn:hover {
+      background-color: rgba(1, 35, 61, 0.8);
+    }
+
+    .article-container {
+      border-radius: 20px;
+      max-width: 900px;
+      width: 90%;
+      margin-top: -200px;
+      padding: 40px 30px;
+      text-align: left;
+      background-color: #fff;
+      position: relative;
+      z-index: 1;
+    }
+
+    .article-content {
+      font-size: 17px;
+      line-height: 1.85;
+      color: #222;
+    }
+
+    .article-content h1 {
+      font-size: 48px;
+      color: #01233d;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .article-content h2 {
+      color: #034c8c;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      font-size: 28px;
+    }
+
+    .article-content p {
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+    .article-content ul {
+      margin-bottom: 24px;
+      padding-left: 20px;
+    }
+
+    .article-content ul li {
+      margin-bottom: 12px;
+    }
+
+    hr {
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: 768px) {
+      .article-content {
+        font-size: 17px;
+      }
+
+      .article-content h1 {
+        font-size: 36px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .back-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+      }
+
+      .article-content h1 {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <a class="back-btn" onclick="window.history.back()">← Back</a>
+    <img src="windimg.jpeg" alt="Strong Wind Image" />
+  </div>
+
+  <div class="article-container">
+    <div class="article-content">
+      <h1>Strong Wind Safety Advice</h1>
+      <p>Author: ClimaCast, Updated: 23/05/2025</p>
+      <hr>
+
+      <p>Strong winds can cause widespread disruption and danger. Follow this guide to stay safe when high winds are forecasted or currently happening.</p>
+
+      <p>ClimaCast will issue warnings if wind speeds could pose a risk to life or cause damage. These warnings will be based on data from official meteorological services.</p>
+
+      <h2>Before the Wind Hits</h2>
+      <ul>
+        <li>Secure loose items outdoors like bins, garden furniture, and decorations.</li>
+        <li>Close and fasten all doors and windows tightly.</li>
+        <li>Park vehicles away from trees or anything that could fall.</li>
+        <li>Postpone unnecessary travel, especially in high-sided vehicles.</li>
+      </ul>
+
+      <h2>During Strong Winds</h2>
+      <ul>
+        <li>Stay indoors and keep away from windows and glass doors.</li>
+        <li>If you're outside, watch for falling branches, tiles, or debris.</li>
+        <li>Avoid walking near walls, scaffolding, or trees that may fall.</li>
+        <li>Do not touch downed power lines or cables — report them immediately.</li>
+        <li>Only travel if it's absolutely necessary and check public transport updates.</li>
+      </ul>
+
+      <h2>After the Wind</h2>
+      <ul>
+        <li>Check your property for damage safely.</li>
+        <li>Report fallen trees or debris blocking roads or paths.</li>
+        <li>Watch out for continued risks from unstable structures.</li>
+        <li>Follow updates from local authorities and ClimaCast for any continued alerts.</li>
+      </ul>
+
+      <p><strong>Strong winds can be dangerous even if they seem short-lived. Stay safe and keep informed through ClimaCast.</strong></p>
+    </div>
+  </div>
+
+</body>
+</html>

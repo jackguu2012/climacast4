@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ClimaCast Article on Extreme Heat Safety" />
+  <title>ClimaCast Article</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..800&display=swap" rel="stylesheet" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fff;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    .header {
+      position: relative;
+      width: 100%;
+      height: 450px;
+      overflow: hidden;
+      z-index: 0;
+    }
+
+    .header img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .back-btn {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      padding: 12px 25px;
+      background-color: rgba(3, 76, 140, 0.8);
+      color: white;
+      text-decoration: none;
+      border-radius: 15px;
+      font-weight: bold;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+      z-index: 10;
+    }
+
+    .back-btn:hover {
+      background-color: rgba(1, 35, 61, 0.8);
+    }
+
+    .article-container {
+      border-radius: 20px;
+      max-width: 900px;
+      width: 90%;
+      margin-top: -200px;
+      padding: 40px 30px;
+      text-align: left;
+      background-color: #fff;
+      z-index: 1;
+      position: relative;
+    }
+
+    .article-content {
+      font-size: 17px;
+      line-height: 1.85;
+      color: #222;
+    }
+
+    .article-content h1 {
+      font-size: 48px;
+      color: #01233d;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .article-content h2 {
+      color: #034c8c;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      font-size: 28px;
+    }
+
+    .article-content p {
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+    .article-content ul {
+      margin-bottom: 24px;
+      padding-left: 20px;
+    }
+
+    .article-content ul li {
+      margin-bottom: 12px;
+    }
+
+    .cta-btn {
+      display: block;
+      width: 100%;
+      padding: 15px;
+      text-align: center;
+      background-color: #034c8c;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 10px;
+      margin-top: 40px;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-btn:hover {
+      background-color: #01233d;
+    }
+
+    hr {
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: 768px) {
+      .article-content {
+        font-size: 17px;
+      }
+
+      .article-content h1 {
+        font-size: 36px;
+      }
+
+      .cta-btn {
+        font-size: 18px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .back-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+      }
+
+      .cta-btn {
+        font-size: 16px;
+        padding: 12px;
+      }
+
+      .article-content h1 {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <a class="back-btn" onclick="window.history.back()">← Back</a>
+    <img src="heatimg.jpg" alt="Heatwave Image" />
+  </div>
+
+  <div class="article-container">
+    <div class="article-content">
+      <h1>Extreme Heat Advice</h1>
+      <p>Author: ClimaCast, Updated: 18/05/2025</p>
+      <hr>
+
+      <p>Extreme heat warnings are issued when temperatures rise well above normal for an extended period. These warnings are serious — they help protect lives and should be followed carefully.</p>
+
+      <p>ClimaCast typically issues these alerts in coordination with government health and weather services. The severity and visibility of our alerts may increase depending on public risk.</p>
+
+      <h2>What to Do During a Heat Warning</h2>
+      <p>If you receive a ClimaCast extreme heat warning, take the following steps:</p>
+      <ul>
+        <li>Stay hydrated by drinking water regularly — avoid caffeine or alcohol.</li>
+        <li>Check in on older individuals and those living alone.</li>
+        <li>Close curtains or blinds that face direct sunlight.</li>
+        <li>Never leave children, pets, or anyone else in a locked car.</li>
+        <li>If outside, use sunscreen of at least SPF 30 and wear a hat.</li>
+        <li>Avoid going outside during peak UV hours (11 a.m. to 3 p.m.).</li>
+        <li>Walk in the shade and avoid heavy physical activities outdoors.</li>
+        <li>Take a bottle of water if you're going out for any length of time.</li>
+        <li>Follow ClimaCast on our <a href="https://climacast.uk/channel/">Channel</a> and view <a href="https://weather.climacast.uk/alerts">current Weather Alerts</a>.</li>
+      </ul>
+
+      <p><strong>Always follow the safety advice in your specific warning — it’s tailored to your local risk and conditions.</strong></p>
+
+      <p>If someone collapses due to heat, call <span style="color: red;">999</span> immediately and move them to a cool, shaded place while you wait for help.</p>
+
+      <h2>Protect Your Pets</h2>
+      <p>If the pavement is too hot for your hand, it’s too hot for your pet’s paws.</p>
+      <p>Use frozen water bottles wrapped in towels to help keep pets cool indoors. Make sure they have access to clean, fresh water at all times, and never leave them in a hot vehicle.</p>
+
+      <h2>Cool Your Home Effectively</h2>
+      <ul>
+        <li>Close windows and blinds during the day to block out heat.</li>
+        <li>Open windows at night when temperatures drop to allow cool air in.</li>
+        <li>Use fans, or place a bowl of ice in front of one to chill the air.</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>
