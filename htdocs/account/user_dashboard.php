@@ -6,6 +6,8 @@ $db = "if0_36374751_account";
 $user = "if0_36374751";
 $pass = "TpV31tgSYevLN";
 
+
+
 if (!isset($_SESSION['user_id'])) {
     header("Location: https://climacast.uk/status/error/400/401.html");
     exit;
@@ -88,6 +90,32 @@ try {
         font-size: 14px;
         color: #000;
     }
+
+.first-user-badge {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  background-color: #fff;
+  color: #333;
+  font-size: 10px;
+  font-weight: bold;
+  position: relative;
+  box-shadow: 0 0 6px rgba(0,0,0,0.2);
+}
+
+.circle-text {
+  text-align: center;
+  width: 100%;
+  line-height: 1.1;
+  padding: 8px;
+}
+
+
 
     .alert a {
         display: inline-block;
@@ -221,6 +249,15 @@ try {
 </div>
 
 <h1>Welcome, <?= htmlspecialchars($user['name']) ?>.</h1>
+
+<?php if ($user['name'] === 'Sharron Hazel Hambelton'): ?>
+  <div class="first-user-badge">
+    <span class="circle-text">First User ❤️</span>
+  </div>
+<?php endif; ?>
+
+
+
 
 <!-- Weather -->
 <div id="weather">

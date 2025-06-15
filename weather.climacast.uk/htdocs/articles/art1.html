@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ClimaCast Article on Thunderstorm Safety and Preparedness" />
+  <title>News</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Funnel Display', sans-serif;
+      background-color: #fff;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    .header {
+      position: relative;
+      width: 100%;
+      height: 450px;
+      overflow: hidden;
+      z-index: 0;
+    }
+
+    .header img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .back-btn {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      padding: 12px 25px;
+      background-color: rgba(3, 76, 140, 0.8);
+      color: white;
+      text-decoration: none;
+      border-radius: 15px;
+      font-weight: bold;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+      z-index: 10;
+      cursor: pointer;
+    }
+
+    .back-btn:hover {
+      background-color: rgba(1, 35, 61, 0.8);
+    }
+
+    .article-container {
+      border-radius: 20px;
+      max-width: 900px;
+      width: 90%;
+      margin-top: -200px;
+      padding: 40px 30px;
+      text-align: left;
+      background-color: #fff;
+      z-index: 1;
+      position: relative;
+    }
+
+    .article-content {
+      font-size: 17px;
+      line-height: 1.85;
+      color: #222;
+    }
+
+    .article-content h1 {
+      font-size: 48px;
+      color: #01233d;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .article-content h2 {
+      color: #034c8c;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      font-size: 28px;
+    }
+
+    .article-content p {
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+    .article-content ul {
+      margin-bottom: 24px;
+      padding-left: 20px;
+    }
+
+    .article-content ul li {
+      margin-bottom: 12px;
+    }
+
+    hr {
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: 768px) {
+      .article-content {
+        font-size: 17px;
+      }
+
+      .article-content h1 {
+        font-size: 36px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .back-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+      }
+
+      .article-content h1 {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <a class="back-btn" onclick="window.history.back()">← Back</a>
+    <img src="safety/thunderimg.jpg" alt="Thunderstorm Image" />
+  </div>
+
+  <div class="article-container">
+    <div class="article-content">
+      <h1>Thunderstorm Warnings Issued</h1>
+      <p>Author: Newsroom, Written: 13/06/2025</p>
+      <hr>
+
+      <h2 style="font-weight: normal;">Thunderstorm warnings have been issued today, in effect overnight Friday and into Saturday.</h2>
+      <p>Thunderstorms are developing rapidly over the North of France, due to hot and humid weather over the continent.</p>
+      <p>"These developing storms may bring heavy downpours and large hailstones along with frequent lightning," says the Met Office.</p>
+      <br>
+      <p>Further warnings may be issued for Saturday stretching up to Scotland and covering North England.</p>
+    </div>
+  </div>
+
+</body>
+</html>

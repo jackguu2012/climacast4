@@ -1,2 +1,6 @@
 ErrorDocument 403 https://climacast.uk/status/error/400/403.html
 ErrorDocument 404 https://climacast.uk/status/error/400/404.html
+
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]

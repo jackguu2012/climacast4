@@ -153,6 +153,7 @@ $pass = "TpV31tgSYevLN";
       height: 160px;
       margin: 2rem auto 0 auto;
       display: block;
+      color: white;
     }
     @media (max-width: 600px) {
       h1 {
@@ -251,7 +252,7 @@ $pass = "TpV31tgSYevLN";
             <div class="forecast-grid">
               ${forecast.map(item => `
                 <div class="forecast-item">
-                  <strong>${new Date(item.dt_txt).toLocaleDateString()}</strong>
+                  <strong>${new Date(item.dt_txt).toLocaleDateString('en-GB')}</strong>
                   <img class="icon" src="https://openweathermap.org/img/wn/${item.weather[0].icon}@2x.png" alt="${item.weather[0].description}" />
                   <div>${item.main.temp.toFixed(1)}°C</div>
                   <div>${item.weather[0].main}</div>
@@ -264,7 +265,7 @@ $pass = "TpV31tgSYevLN";
 
     function renderChart() {
       const ctx = document.getElementById('graph').getContext('2d');
-      const labels = state.forecast.map(item => new Date(item.dt_txt).toLocaleDateString());
+      const labels = state.forecast.map(item => new Date(item.dt_txt).toLocaleDateString('en-GB'));
       const temps = state.forecast.map(item => item.main.temp);
 
       if (window.weatherChart) window.weatherChart.destroy();

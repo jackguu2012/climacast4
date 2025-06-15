@@ -59,9 +59,9 @@ $loggedIn = isset($_SESSION['user_id']);
       left: 30px;
     }
     #account-icon img {
-  width: 35px;  /* increase this to make it bigger */
-  height: 35px;
-}
+      width: 35px;
+      height: 35px;
+    }
 
     #account-icon {
       background: none;
@@ -107,12 +107,12 @@ $loggedIn = isset($_SESSION['user_id']);
       margin: 10px 0;
       font-weight: bold;
     }
-    
+
     #btn-1 {
-    border-radius: 15px 15px 5px 5px;
+      border-radius: 15px 15px 5px 5px;
     }
     #btn-2 {
-    border-radius: 5px 5px 15px 15px;
+      border-radius: 5px 5px 15px 15px;
     }
     .art-1 {
       background: #dfe6f5;
@@ -210,6 +210,59 @@ $loggedIn = isset($_SESSION['user_id']);
         width: 90%;
       }
     }
+
+    /* Modal Styles */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    .modal-content {
+      background: white;
+      border-radius: 20px;
+      padding: 30px;
+      max-width: 400px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      animation: popIn 0.3s ease-out;
+    }
+
+    .modal-content h2 {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    .modal-content p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    #close-modal {
+      padding: 10px 20px;
+      background: #01233d;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    #close-modal:hover {
+      background: #034c8c;
+    }
+
+    @keyframes popIn {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
   </style>
 </head>
 <body>
@@ -249,6 +302,20 @@ $loggedIn = isset($_SESSION['user_id']);
       <p>Go to your dashboard to find out!</p>
       <a href="https://climacast.uk/account/user_dashboard.php">Dashboard</a>
     </div>
+  </div>
+
+  <!-- Modal HTML -->
+  <div id="welcome-modal" class="modal-overlay">
+    <div class="modal-content">
+      <h2>Feedback</h2>
+      <p>If you have a minute, could you possibly leave some feedback? It'd help us out a lot.</p>
+      <button id="close-modal">Close</button>
+      <a href="https://climacast.uk/reportaproblem">
+        <button id="close-modal" href="https://climacast.uk/reportaproblem">Sure!</button>
+      </a>
+    </div>
+  </div>
+
   <script>
     document.getElementById("search-in").addEventListener("keypress", e => {
       if (e.key === "Enter") searchpreflight();
@@ -268,6 +335,18 @@ $loggedIn = isset($_SESSION['user_id']);
         dropdown.style.display = dropdown.style.display === "flex" ? "none" : "flex";
       });
     }
+
+    // Modal logic
+    window.addEventListener("load", () => {
+      if (!localStorage.getItem("3welcomeModalShown")) {
+        document.getElementById("welcome-modal").style.display = "flex";
+        localStorage.setItem("3welcomeModalShown", "true");
+      }
+
+      document.getElementById("close-modal").addEventListener("click", () => {
+        document.getElementById("welcome-modal").style.display = "none";
+      });
+    });
   </script>
 </body>
 </html>
